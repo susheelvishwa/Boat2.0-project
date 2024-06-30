@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>boat-lifestyle.com</title>
-    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAACiCAMAAAATIHpEAAAAeFBMVEUAAADtHCT1HSVjDA8+BwnyHSX3HSbwHCXsHCRmDA/hGyK6FhyDDxTYGiGwFRutFBogBAWMERVUCg2eExjOGB/8HiZ3DhIbAwRPCQzIGB4lBAbUGSBHCAucEhgWAwMwBgc4BwilFBluDREqBQZ1DhJbCw6TERYoBQZu6NjnAAAELUlEQVR4nO3ci3qjIBAF4EKK5H5rktZ20yZ76b7/G67WtBIFhKx2BM//BJP5mChH9O4OAAAAAAAAAAAAAJw9UhcQqJS6gDA97d+oSwjSKjlSlxCksZxSlxCiEWfJlrqIAM0Ek0vqIgIkWYa6iPAceNY2/pu6jOCk+XqTuIXztBb5mDLxTF1IYDa86Ns7dSGBefm4LDC5oC4kLKdiuWVXhh/UpQTlKC59E2fqUoIylZe+sTF1KSHZfo5pNqgT6mICshJffRMz6mICMmYlTl1MOCZc7ducupxgzITSN7mjLicYatsYSxCXuznwq74JxOVuUnnVN8Tlbl4Tdg1xuZONqPQNcbmTF1npG/ZaLk7VMUVc7uRYHVPE5U6mtTFFXO7gqT6mWd821GX13qo+pojLHYw1bUNc3mjCtX1DXN5gphtThlu4JpqLaTGoiMttDvoxRVzeIDWtN8TlNmvTckNcbrUx9w1xucXCOKaIyy00UYhyZUBcbvJguHkrBhVxuYkuClEGFXG5njYKURYc4nI9bRSiwF5LTx+FlPhP6gp7yRCFKIOKuFzHFIWUxJq6xj6yXkyLviEurzNGIcqgIi6vM0chJcTlNc+N/24McbmGJQpR4Bauqn4qRDuoI+o6e+beabkhLq+yRiHqgqMutGfsUYjSN8Tlqq3bmCIur2iKQkqIy1VNUUgJcbmiMQpRBhVxeak5ClEG9Ym62v5wX26IyxUOUYgCe61PLlFICXH5heVUiHZQEZcXai/INEBcXnCLQkoccXnOeipEB3H5B9coRFlw99Q194FrFFJCXJ7Z+o4pwy1czj0K+SL3uIXziEIuTeMiPeBT0h5RSEZwmR6oS+4FjyhEcDbDG7wXrm2TWdPwr/bFLQrJm4YXjVQOUUjWtCWadm3ddPMm+HiJZ/Q19ihEJNPVH+oSe8n8gozMmnbGyXs9UxQiBZ+e8fzFSBuFoGmN6lFI3rQHnKq0q74gkzVtcUTTGl1FIdmFYPF+oi4pCOPrpuHEjJvPKCRr2m7zi7qacHxEIZLz3QafjfIh8wxyN0fT/Mz3Ip3jEbK38xxpN0B//J2Mvsskqu0G499lH1X05Heg8j/IyN5Dsn3Ap038RP1L2zW54RDIDeJ77W33LQuOR7fLbfgWTTvEivpnti/1P3bk37dX6l/ZvrfuF1ycxwmXnS84Qf0TO/HYdd94pG8K+p9/9hPt4VXfk5V+4n2rwe0TIbeKdrndcuLeXcwfLOhwex/3a9Ddbe951KelR13d/Mb+ylZX2/sk8oOsHW3v5Qv1D+uaz5cb3CXRn2btZHs/hI//dLG9H8InRV7b79swPlTQ/vY+ieqZqVHb2/v4Hsbotb29j+3Zn1G723sxmO8ltbu9F8M5Ftzm9j7GZ38mo32LJ2mGdGLzvj3DmVIAAAAAAAAAAAAAm3+EKS9kNBSevwAAAABJRU5ErkJggg==" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAACiCAMAAAATIHpEAAAAeFBMVEUAAADtHCT1HSVjDA8+BwnyHSX3HSbwHCXsHCRmDA/hGyK6FhyDDxTYGiGwFRutFBogBAWMERVUCg2eExjOGB/8HiZ3DhIbAwRPCQzIGB4lBAbUGSBHCAucEhgWAwMwBgc4BwilFBluDREqBQZ1DhJbCw6TERYoBQZu6NjnAAAELUlEQVR4nO3ci3qjIBAF4EKK5H5rktZ20yZ76b7/G67WtBIFhKx2BM//BJP5mChH9O4OAAAAAAAAAAAAAJw9UhcQqJS6gDA97d+oSwjSKjlSlxCksZxSlxCiEWfJlrqIAM0Ek0vqIgIkWYa6iPAceNY2/pu6jOCk+XqTuIXztBb5mDLxTF1IYDa86Ns7dSGBefm4LDC5oC4kLKdiuWVXhh/UpQTlKC59E2fqUoIylZe+sTF1KSHZfo5pNqgT6mICshJffRMz6mICMmYlTl1MOCZc7ducupxgzITSN7mjLicYatsYSxCXuznwq74JxOVuUnnVN8Tlbl4Tdg1xuZONqPQNcbmTF1npG/ZaLk7VMUVc7uRYHVPE5U6mtTFFXO7gqT6mWd821GX13qo+pojLHYw1bUNc3mjCtX1DXN5gphtThlu4JpqLaTGoiMttDvoxRVzeIDWtN8TlNmvTckNcbrUx9w1xucXCOKaIyy00UYhyZUBcbvJguHkrBhVxuYkuClEGFXG5njYKURYc4nI9bRSiwF5LTx+FlPhP6gp7yRCFKIOKuFzHFIWUxJq6xj6yXkyLviEurzNGIcqgIi6vM0chJcTlNc+N/24McbmGJQpR4Bauqn4qRDuoI+o6e+beabkhLq+yRiHqgqMutGfsUYjSN8Tlqq3bmCIur2iKQkqIy1VNUUgJcbmiMQpRBhVxeak5ClEG9Ym62v5wX26IyxUOUYgCe61PLlFICXH5heVUiHZQEZcXai/INEBcXnCLQkoccXnOeipEB3H5B9coRFlw99Q194FrFFJCXJ7Z+o4pwy1czj0K+SL3uIXziEIuTeMiPeBT0h5RSEZwmR6oS+4FjyhEcDbDG7wXrm2TWdPwr/bFLQrJm4YXjVQOUUjWtCWadm3ddPMm+HiJZ/Q19ihEJNPVH+oSe8n8gozMmnbGyXs9UxQiBZ+e8fzFSBuFoGmN6lFI3rQHnKq0q74gkzVtcUTTGl1FIdmFYPF+oi4pCOPrpuHEjJvPKCRr2m7zi7qacHxEIZLz3QafjfIh8wxyN0fT/Mz3Ip3jEbK38xxpN0B//J2Mvsskqu0G499lH1X05Heg8j/IyN5Dsn3Ap038RP1L2zW54RDIDeJ77W33LQuOR7fLbfgWTTvEivpnti/1P3bk37dX6l/ZvrfuF1ycxwmXnS84Qf0TO/HYdd94pG8K+p9/9hPt4VXfk5V+4n2rwe0TIbeKdrndcuLeXcwfLOhwex/3a9Ddbe951KelR13d/Mb+ylZX2/sk8oOsHW3v5Qv1D+uaz5cb3CXRn2btZHs/hI//dLG9H8InRV7b79swPlTQ/vY+ieqZqVHb2/v4Hsbotb29j+3Zn1G723sxmO8ltbu9F8M5Ftzm9j7GZ38mo32LJ2mGdGLzvj3DmVIAAAAAAAAAAAAAm3+EKS9kNBSevwAAAABJRU5ErkJggg=="
+        type="image/x-icon">
     <link rel="stylesheet" href="home.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    
+
 </head>
+
 <body>
 
     <!-----------main_div---------->
@@ -17,42 +21,116 @@
 
         <!-- ----------massage---------- -->
         <div class="bondwithboat">
-            <p class="para">Go extra on celebrations & savings with <b>Bond With boAt!</b> Bag <b>offers</b> & <b>personalized gifts.</b></p>
-        </h1></div>
+            <p class="para">Go extra on celebrations & savings with <b>Bond With boAt!</b> Bag <b>offers</b> &
+                <b>personalized gifts.</b>
+            </p>
+            </h1>
+        </div>
+
+        <br>
 
 
         <!--------------- this is a navigation bar ------------------>
         <div class="navigation">
             <div class="logo">
-                <img class="logo" src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" alt="">
+                <img class="logo"
+                    src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"
+                    alt="">
             </div>
             <div class="option">
-                <div class="navoption3"><h3>Categories</h3></div>
-                <div class="navoption4"><h3>Daily Deals</h3></div>
-                <div class="navoption5"><h3>Gift with boAt</h3></div>
-                <div class="navoption6"><h3>Corporate Orders</h3></div>
-                <div class="navoption6"><h3>More</h3></div>
+                <div class="navoptionn">
+                    <h3> <a href="Categories">Categories</a> </h3>
+                </div>
+                <div class="navoptionn">
+                    <h3> <a href="Daily Deals">Daily Deals</a> </h3>
+                </div>
+                <div class="navoptionn">
+                    <h3> <a href="Gift with boAt">Gift with boAt</a> </h3>
+                </div>
+                <div class="navoptionn">
+                    <h3> <a href="Corporate Orders">Corporate Orders</a> </h3>
+                </div>
+                <div class="navoptionn">
+                    <h3> <a href="More">More</a> </h3>
+                </div>
             </div>
             <div class="sarch">
                 <div class="sarch1">
                     <input type="text" class="-box" placeholder="     Sarch Your Product">
                 </div>
                 <div class="login">
-                    <img class="login1" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="">
+                    <img class="login1"
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" alt="">
                 </div>
                 <div class="card">
-                    <img class="login2" src="https://static.vecteezy.com/system/resources/previews/021/340/866/original/shopping-bag-icon-for-your-website-design-logo-app-ui-free-vector.jpg" alt="">
+                    <img class="login2"
+                        src="https://static.vecteezy.com/system/resources/previews/021/340/866/original/shopping-bag-icon-for-your-website-design-logo-app-ui-free-vector.jpg"
+                        alt="">
                 </div>
             </div>
         </div>
 
 
         <!------------------ this is slider bar --------------------->
-        <div class="slider">
-            <img class="sliderimage" src="https://www.boat-lifestyle.com/cdn/shop/files/LNT_WEB_1440x.jpg?v=1698230264" alt="">
-        </div>
+        <!-- <div class="slider"> -->
+            <div class="slider-box">
+                <div id="slider">
+                    <img src="https://www.boat-lifestyle.com/cdn/shop/files/IM_Katana_blade_Banner_WEB_copy_2_1440x.jpg?v=1701326393"
+                        alt="">
+                    <img src="https://www.boat-lifestyle.com/cdn/shop/files/Personalization_Desk_1440x.png?v=1698928779" alt="">
+                    <img src="https://www.boat-lifestyle.com/cdn/shop/files/Crest-banner-dark-desktop_1600x.png?v=1699269025"
+                        alt="">
+                    <img src="https://www.boat-lifestyle.com/cdn/shop/files/Lunar_TIgon_WEB_Banner_1440x.jpg?v=1701333079"
+                        alt="">
+                </div>
+                <div class="indicators">
+                    <span id="btn1" class="active"></span>
+                    <span id="btn2" class="active"></span>
+                    <span id="btn3" class="active"></span>
+                    <span id="btn4" class="active"></span>
+                </div>
+            <!-- </div> -->
+        
+        
+            <script>
 
-        <br>
+                var slide = document.getElementById("slider");
+                var btn1 = document.getElementById('btn1');
+                var btn2 = document.getElementById('btn2');
+                var btn3 = document.getElementById('btn3');
+                var btn4 = document.getElementById('btn4');
+
+                btn1.onclick = function () {
+                    slide.style.transform = "translateX(0px)";
+                    btn1.classList.add('active');
+                    btn2.classList.remove('active');
+                    btn3.classList.remove('active');
+                    btn4.classList.remive('active');
+                };
+                btn2.onclick = function () {
+                    slide.style.transform = "translateX(-100%)";
+                    btn1.classList.remove('active');
+                    btn2.classList.add('active');
+                    btn3.classList.remove('active');
+                    btn4.classList.remove('active');
+                };
+                btn3.onclick = function () {
+                    slide.style.transform = "translateX(-200%)";
+                    btn1.classList.remove('active');
+                    btn2.classList.remove('active');
+                    btn3.classList.add('active');
+                    btn4.classList.remove('active');
+                };
+                btn4.onclick = function () {
+                    slide.style.transform = "translateX(-300%)";
+                    btn1.classList.remove('active');
+                    btn2.classList.remove('active');
+                    btn3.classList.remove('active');
+                    btn4.classList.add('active');
+                };
+
+            </script>
+        </div>
 
         <!---------- this is a section part only heading ------------>
         <div class="section">
@@ -64,27 +142,31 @@
         <!---- this is a bestseller section under div some video ---->
         <div class="bestseller">
             <div class="img11">
-                <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_RUxbhR7CvjkNtlFUDxgw9.mp4"></video>
+                <video class="video1"
+                    src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_RUxbhR7CvjkNtlFUDxgw9.mp4" controls autoplay muted loop ></video>
                 <div class="imgtext">
-                <p class="ptag">Smartwatch</p>
+                    <p class="ptag">Smartwatch</p>
                 </div>
             </div>
             <div class="img11">
-                <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_Bejc8URjU1NSXdhabLCmD.mp4"></video>
+                <video class="video1"
+                    src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_Bejc8URjU1NSXdhabLCmD.mp4" controls autoplay muted loop></video>
                 <div class="imgtext">
-                <p class="ptag">Wireless Earbuds</p>
+                    <p class="ptag">Wireless Earbuds</p>
                 </div>
             </div>
             <div class="img11">
-                <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_OyJHanx4QSdUN3OVGTO7C.mp4"></video>
+                <video class="video1"
+                    src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_OyJHanx4QSdUN3OVGTO7C.mp4" controls autoplay muted loop></video>
                 <div class="imgtext">
-                <p class="ptag">Neckbands</p>
+                    <p class="ptag">Neckbands</p>
                 </div>
             </div>
             <div class="img11">
-                <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_CpsRIdJWtpXyFN3enwbXd.mp4"></video>
+                <video class="video1"
+                    src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_CpsRIdJWtpXyFN3enwbXd.mp4" controls autoplay muted loop></video>
                 <div class="imgtext">
-                <p class="ptag">Headphones</p>
+                    <p class="ptag">Headphones</p>
                 </div>
             </div>
         </div>
@@ -101,7 +183,8 @@
             </div>
             <br>
             <div class="timing">
-                <img class="timing1" src="https://www.boat-lifestyle.com/cdn/shop/files/Strip_Desktop_3_1600x.png?v=1699633856" alt="">
+                <img class="timing1"
+                    src="https://www.boat-lifestyle.com/cdn/shop/files/Strip_Desktop_3_1600x.png?v=1699633856" alt="">
             </div>
 
             <br>
@@ -111,38 +194,45 @@
             <div class="items">
                 <div class="box31">
                     <div class="img31">
-                        <img class="IMG21" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049" alt="">
+                        <img class="IMG21"
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049"
+                            alt="">
                     </div>
                     <div class="text31">
                         <h4>Airdopes 131br <legend>799/- save </legend>
-                        <div class="rating31"></div>
+                            <div class="rating31"></div>
                     </div>
                 </div>
                 <div class="box31">
                     <div class="img31">
-                        <img class="IMG21" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.jpg?v=1686297917" alt="">
+                        <img class="IMG21"
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.jpg?v=1686297917" alt="">
                     </div>
                     <div class="text31">
                         <h4>Airdopes 131br <legend>799/- save </legend>
-                        <div class="rating31"></div>
+                            <div class="rating31"></div>
                     </div>
                 </div>
                 <div class="box31">
                     <div class="img31">
-                        <img class="IMG21" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/rockerz_ea76e8ff-d95c-49da-b6c9-fca4304dce11.jpg?v=1685686978" alt="">
+                        <img class="IMG21"
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/rockerz_ea76e8ff-d95c-49da-b6c9-fca4304dce11.jpg?v=1685686978"
+                            alt="">
                     </div>
                     <div class="text31">
                         <h4>Airdopes 131br <legend>799/- save </legend>
-                        <div class="rating31"></div>
+                            <div class="rating31"></div>
                     </div>
                 </div>
                 <div class="box31">
                     <div class="img31">
-                        <img class="IMG21" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_141_d277995b-31ae-420d-b5b4-1161515335ed.jpg?v=1687428689" alt="">
+                        <img class="IMG21"
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_141_d277995b-31ae-420d-b5b4-1161515335ed.jpg?v=1687428689"
+                            alt="">
                     </div>
                     <div class="text31">
                         <h4>Airdopes<legend>500/- save </legend>
-                        <div class="rating31"></div>
+                            <div class="rating31"></div>
                     </div>
                 </div>
             </div>
@@ -160,51 +250,71 @@
             <br>
             <div class="product">
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Headphones_small.png?v=1684842854" alt="">
-                    <p class="change">hvhgvhg <legend>733</legend></p>
-                </div>
-                <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Speaker_small.png?v=1684842854" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Headphones_small.png?v=1684842854"
+                        alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Soundbars_d9a7bdfd-e780-4581-ab85-f2e86f84cd28_small.png?v=1684842854" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Speaker_small.png?v=1684842854"
+                        alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Trimmers_d0d346cf-b681-49b6-8942-835819bec2d1_small.png?v=1684842853" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Soundbars_d9a7bdfd-e780-4581-ab85-f2e86f84cd28_small.png?v=1684842854"
+                        alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Neckbands_bc6343f4-622f-4ebd-bb36-205643c3bf78_small.png?v=1684842854" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Trimmers_d0d346cf-b681-49b6-8942-835819bec2d1_small.png?v=1684842853"
+                        alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Smartwatches_88f12bcf-24bd-4e3a-aacb-ecc204f62179_small.png?v=1684842853" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Neckbands_bc6343f4-622f-4ebd-bb36-205643c3bf78_small.png?v=1684842854"
+                        alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/True-wireless-earbuds_small.png?v=1684842854" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Smartwatches_88f12bcf-24bd-4e3a-aacb-ecc204f62179_small.png?v=1684842853"
+                        alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Neckbands_bc6343f4-622f-4ebd-bb36-205643c3bf78_small.png?v=1684842854" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/True-wireless-earbuds_small.png?v=1684842854"
+                        alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Smartwatches_88f12bcf-24bd-4e3a-aacb-ecc204f62179_small.png?v=1684842853" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Neckbands_bc6343f4-622f-4ebd-bb36-205643c3bf78_small.png?v=1684842854"
+                        alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
                 <div class="shopbyimg">
-                    <img class="shopbyby" src="https://www.boat-lifestyle.com/cdn/shop/files/Powerbanks_small.png?v=1684842853" alt="">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Smartwatches_88f12bcf-24bd-4e3a-aacb-ecc204f62179_small.png?v=1684842853"
+                        alt="">
+                    <p class="change">hvhgvhg <legend>733</legend>
+                    </p>
+                </div>
+                <div class="shopbyimg">
+                    <img class="shopbyby"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Powerbanks_small.png?v=1684842853" alt="">
                     <p class="change">hvhgvhg <legend>733</legend>
                     </p>
                 </div>
@@ -246,7 +356,7 @@
         </div> -->
         <div class="newnew">
             <div class="section1111">
-                New  <b>launches</b>
+                New <b>launches</b>
             </div>
 
             <div class="launch">
@@ -258,12 +368,14 @@
                                 alt="">
                         </div>
                         <div class="text31">
-                            <h4>Airdopes 131br <legend>799/- save </legend></h4>
+                            <h4>Airdopes 131br <legend>799/- save </legend>
+                            </h4>
                         </div>
                     </div>
                     <div class="box31">
                         <div class="img31">
-                            <img class="IMG21" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_750.jpg?v=1699500834"
+                            <img class="IMG21"
+                                src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_750.jpg?v=1699500834"
                                 alt="">
                         </div>
                         <div class="text31">
@@ -306,25 +418,25 @@
             <div class="gstimg1">
                 <img src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334305_small.svg?v=1682336123" alt="">
                 <div class="gsttext">
-                    <p><b>1 year  </b> Warranty</p>
+                    <p><b>1 year </b> Warranty</p>
                 </div>
             </div>
             <div class="gstimg1">
                 <img src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334304_small.svg?v=1682336123" alt="">
                 <div class="gsttext">
-                    <p><b>7-day    </b>Replacement</p>
+                    <p><b>7-day </b>Replacement</p>
                 </div>
             </div>
             <div class="gstimg2">
                 <img src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334303_small.svg?v=1682336123" alt="">
                 <div class="gsttext">
-                    <p><b>Free    </b>Shipping</p>
+                    <p><b>Free </b>Shipping</p>
                 </div>
             </div>
             <div class="gstimg2">
                 <img src="https://www.boat-lifestyle.com/cdn/shop/files/Group_334302_small.svg?v=1682336123" alt="">
                 <div class="gsttext">
-                    <p><b>GST   </b>  Billing</p>
+                    <p><b>GST </b> Billing</p>
                 </div>
             </div>
         </div>
@@ -333,7 +445,7 @@
         <br>
 
         <!-------------------------- this is lifestyle section ------------------------->
-        
+
         <div class="style">
             <div class="fortext">
                 <p class="sec">
@@ -342,28 +454,32 @@
             </div>
             <div class="forimage">
                 <div class="photo">
-                    <img class="hii" src="https://www.boat-lifestyle.com/cdn/shop/files/shreyas-chronos-new.png?v=1696843687" alt="">
+                    <img class="hii"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/shreyas-chronos-new.png?v=1696843687" alt="">
                     <div class="photo1">
                         <h2 class="for">For Fitness</h2>
                         <p class="for1">View All</p>
                     </div>
                 </div>
                 <div class="photo">
-                    <img class="hii" src="https://www.boat-lifestyle.com/cdn/shop/files/Party_Animal_4.png?v=1685942349" alt="">
+                    <img class="hii" src="https://www.boat-lifestyle.com/cdn/shop/files/Party_Animal_4.png?v=1685942349"
+                        alt="">
                     <div class="photo1">
                         <h2 class="for">For Parties</h2>
                         <p class="for1">View All</p>
                     </div>
                 </div>
                 <div class="photo">
-                    <img class="hii" src="https://www.boat-lifestyle.com/cdn/shop/files/Workaholic_2.png?v=1685083745" alt="">
+                    <img class="hii" src="https://www.boat-lifestyle.com/cdn/shop/files/Workaholic_2.png?v=1685083745"
+                        alt="">
                     <div class="photo1">
                         <h2 class="for">For Work</h2>
                         <p class="for1">View All</p>
                     </div>
                 </div>
                 <div class="photo">
-                    <img class="hii" src="https://www.boat-lifestyle.com/cdn/shop/files/Entertainment_2.png?v=1685083746" alt="">
+                    <img class="hii"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/Entertainment_2.png?v=1685083746" alt="">
                     <div class="photo1">
                         <h2 class="for">For Entertainment</h2>
                         <p class="for1">View All</p>
@@ -371,7 +487,8 @@
 
                 </div>
                 <div class="photo">
-                    <img class="hii" src="https://www.boat-lifestyle.com/cdn/shop/files/Audiophile_5.png?v=1696328658" alt="">
+                    <img class="hii" src="https://www.boat-lifestyle.com/cdn/shop/files/Audiophile_5.png?v=1696328658"
+                        alt="">
                     <div class="photo1">
                         <h2 class="for">For Audiophiles</h2>
                         <p class="for1">View All</p>
@@ -393,7 +510,8 @@
         <div class="trive">
             <div class="trivevideo">
                 <div class="triveimg">
-                    <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_xpg45x3tsvrtg8ucgujmpt3o.mp4"></video>
+                    <video class="video1"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_xpg45x3tsvrtg8ucgujmpt3o.mp4" controls autoplay muted loop></video>
                 </div>
                 <br>
                 <div class="trivetext">
@@ -406,7 +524,8 @@
             </div>
             <div class="trivevideo">
                 <div class="triveimg">
-                    <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_nllcbnridpzc4qyllsmm6qsu.mp4"></video>
+                    <video class="video1"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_nllcbnridpzc4qyllsmm6qsu.mp4" controls autoplay muted loop></video>
                 </div>
                 <br>
                 <div class="trivetext">
@@ -419,7 +538,8 @@
             </div>
             <div class="trivevideo">
                 <div class="triveimg">
-                    <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_grosd0onc5sj8dwr9clf352w.mp4"></video>
+                    <video class="video1"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_grosd0onc5sj8dwr9clf352w.mp4" controls autoplay muted loop></video>
                 </div>
                 <br>
                 <div class="trivetext">
@@ -432,7 +552,8 @@
             </div>
             <div class="trivevideo">
                 <div class="triveimg">
-                    <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_grosd0onc5sj8dwr9clf352w.mp4"></video>
+                    <video class="video1"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_x8k70iqkj4n2pjptbrns2072.mp4" controls autoplay muted loop></video>
                 </div>
                 <br>
                 <div class="trivetext">
@@ -445,7 +566,8 @@
             </div>
             <div class="trivevideo">
                 <div class="triveimg">
-                    <video class="video1" src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_aap097hd678vxyi81kgcyl4q.mp4"></video>
+                    <video class="video1"
+                        src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_aap097hd678vxyi81kgcyl4q.mp4" controls autoplay muted loop></video>
                 </div>
                 <br>
                 <div class="trivetext">
@@ -500,74 +622,78 @@
                 </div>
             </div>
             -->
-            <!-- <div class="inthepress">
+        <!-- <div class="inthepress">
                 <div class="sectionnnn">ghhcg</div>
                 <div class="press">
                     <div class="mint"></div>
                     <div class="inboat"></div>
                 </div>
             </div> -->
-        </div> 
-        
+    </div>
 
 
-        <br>
 
-        <!-------------------------------- this a footer section -------------------------------->
-        <div class="footer">
-            <div class="email">
-                <img class="logooo" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_logo.svg" alt="">
-                <br>
-                <h2 class="texttt">Subscribe to our email alerts!</h2>
+    <br>
 
-                <input type="email" name="Enter Your E-mail" placeholder="Susheelvishwakarma.india@gmail.com" id="emaill">
-            </div>
-            <div class="shop">
-                <h3>Shop</h3>
-                <p>True Wireless Earbuds</p>
-                <p>Wired Headphones</p>
-                <p>Home Audio</p>
-                <p>Smart Watches</p>
-                <p>Misfit Trimmers</p>
-            </div>
-            <div class="help">
-                <h3>Help</h3>
-                <p>Track Your Order</p>
-                <p>Warranty & Support</p>
-                <p>Return Policy</p>
-                <p>Service Centers</p>
-                <p>Bulk Orders</p>
-            </div>
-            <div class="company">
-                <h3>Company</h3>
-                <p>About boAt</p>
-                <p>News</p>
-                <p>Read Our Blog</p>
-                <p>Careers</p>
-                <p>Security</p>
-            </div>
+    <!-------------------------------- this a footer section -------------------------------->
+    <div class="footer">
+        <div class="email">
+            <img class="logooo" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_logo.svg" alt="">
+            <br>
+            <h2 class="texttt">Subscribe to our email alerts!</h2>
+
+            <input type="email" name="Enter Your E-mail" placeholder="Susheelvishwakarma.india@gmail.com" id="emaill">
         </div>
-
-        <div class="footer1">
-            <div class="social">
-                <h2>Lets get Social
-                    <a href="https://www.facebook.com/boat.lifestyle"><i class="ri-facebook-line"></i></a>
-                    <a href="https://www.instagram.com/boat.nirvana/"><i class="ri-instagram-line"></i></a>
-                    <a href="https://www.youtube.com/channel/UCY3JXaO_v8H3E6hTYUp5qWQ"></a>
-                    <a href="https://www.linkedin.com/company/boat-lifestyle/">L</a>
-                </h2>
-            </div>
-            <div class="policy">
-                <p>Privacy Policy • Terms & Conditions</p>
-            </div>
-            <div class="footermasage">
-                <p>@ 2023 Imagine Marketing Limited. All Rights Reserved.</p>
-
-                <p>For queries contact us: Manager, Irnagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing,
-                Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India</p>
-            </div>
+        <div class="shop">
+            <h3>Shop</h3>
+            <p>True Wireless Earbuds</p>
+            <p>Wired Headphones</p>
+            <p>Home Audio</p>
+            <p>Smart Watches</p>
+            <p>Misfit Trimmers</p>
+        </div>
+        <div class="help">
+            <h3>Help</h3>
+            <p>Track Your Order</p>
+            <p>Warranty & Support</p>
+            <p>Return Policy</p>
+            <p>Service Centers</p>
+            <p>Bulk Orders</p>
+        </div>
+        <div class="company">
+            <h3>Company</h3>
+            <p>About boAt</p>
+            <p>News</p>
+            <p>Read Our Blog</p>
+            <p>Careers</p>
+            <p>Security</p>
         </div>
     </div>
 
+    <div class="footer1">
+        <div class="social">
+            <h2>Lets get Social
+                <a href="https://www.facebook.com/boat.lifestyle"><i class="ri-facebook-line"></i></a>
+                <a href="https://www.instagram.com/boat.nirvana/"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.youtube.com/channel/UCY3JXaO_v8H3E6hTYUp5qWQ"></a>
+                <a href="https://www.linkedin.com/company/boat-lifestyle/">L</a>
+            </h2>
+        </div>
+        <div class="policy">
+            <p>Privacy Policy • Terms & Conditions</p>
+        </div>
+        <div class="footermasage">
+            <p>@ 2023 Imagine Marketing Limited. All Rights Reserved.</p>
+
+            <p>For queries contact us: Manager, Irnagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing &
+                E-wing,
+                Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India</p>
+        </div>
+    </div>
+    </div>
+    <script src="home.js"></script>
 </body>
+
+
+
 </html>
