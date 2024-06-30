@@ -31,4 +31,4 @@ To run the project locally:
 2. Open `index.html` in your browser.
 
 - Website: [boat-lifestyle.com](https://susheelvishwakarma.netlify.app/)
-- Github Repo : ()
+- Github Repo: [Github link](https://github.com/susheelvishwa/Boat2.0-project)
