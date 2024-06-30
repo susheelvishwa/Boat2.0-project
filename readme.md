@@ -1,4 +1,4 @@
-# boat-lifestyle.com
+# Boat-lifestyle.com
 
 ## Description
 This project is a website for boat-lifestyle.com, showcasing various products and offers.
@@ -30,4 +30,5 @@ To run the project locally:
 1. Clone this repository.
 2. Open `index.html` in your browser.
 
-- Website: [boat-lifestyle.com](https://www.boat-lifestyle.com)
+- Website: [boat-lifestyle.com](https://susheelvishwakarma.netlify.app/)
+- Github Repo : ()
